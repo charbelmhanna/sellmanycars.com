@@ -16,7 +16,7 @@ class Controller extends BaseController
     public function contact(Request $request)
     {
 
-        $validated = $this->validate($request, [
+        validated = $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required|max:200',
