@@ -24,7 +24,7 @@ class Controller extends BaseController
         ]);
 
 
-        return response($validated, 200)
+        response($validated, 200)
             ->header('Content-Type', 'text/plain');;
 
     }
